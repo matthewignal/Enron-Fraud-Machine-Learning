@@ -10,48 +10,48 @@ This project involves investigating a dataset related to the scandal which led t
 146 entries makes for a small data set. This makes outliers more dangerous and overfitting harder to avoid.
 
 A single individual's entry:<br>
-METTS MARK
-salary : 365788
-to_messages : 807
-deferral_payments : NaN
-total_payments : 1061827
-exercised_stock_options : NaN
-bonus : 600000
-restricted_stock : 585062
-shared_receipt_with_poi : 702
-restricted_stock_deferred : NaN
-total_stock_value : 585062
-expenses : 94299
-loan_advances : NaN
-from_messages : 29
-other : 1740
-from_this_person_to_poi : 1
-poi : False
-director_fees : NaN
-deferred_income : NaN
-long_term_incentive : NaN
+METTS MARK<br>
+salary : 365788<br>
+to_messages : 807<br>
+deferral_payments : NaN<br>
+total_payments : 1061827<br>
+exercised_stock_options : NaN<br>
+bonus : 600000<br>
+restricted_stock : 585062<br>
+shared_receipt_with_poi : 702<br>
+restricted_stock_deferred : NaN<br>
+total_stock_value : 585062<br>
+expenses : 94299<br>
+loan_advances : NaN<br>
+from_messages : 29<br>
+other : 1740<br>
+from_this_person_to_poi : 1<br>
+poi : False<br>
+director_fees : NaN<br>
+deferred_income : NaN<br>
+long_term_incentive : NaN<br>
 from_poi_to_this_person : 38
 
 Number of NaN's per feature:<br>
-poi :  0
-salary :  51
-deferral_payments :  107
-total_payments :  21
-loan_advances :  142
-bonus :  64
-restricted_stock_deferred :  128
-deferred_income :  97
-total_stock_value :  20
-expenses :  51
-exercised_stock_options :  44
-other :  53
-long_term_incentive :  80
-restricted_stock :  36
-director_fees :  129
-to_messages :  60
-from_poi_to_this_person :  60
-from_messages :  60
-from_this_person_to_poi :  60
+poi :  0<br>
+salary :  51<br>
+deferral_payments :  107<br>
+total_payments :  21<br>
+loan_advances :  142<br>
+bonus :  64<br>
+restricted_stock_deferred :  128<br>
+deferred_income :  97<br>
+total_stock_value :  20<br>
+expenses :  51<br>
+exercised_stock_options :  44<br>
+other :  53<br>
+long_term_incentive :  80<br>
+restricted_stock :  36<br>
+director_fees :  129<br>
+to_messages :  60<br>
+from_poi_to_this_person :  60<br>
+from_messages :  60<br>
+from_this_person_to_poi :  60<br>
 shared_receipt_with_poi :  60
 
 The sheer number of NaN's is high, but given that we have a mixture of persons of interest and non-persons of interest, it is reasonable.
@@ -118,8 +118,8 @@ True negatives: 10679
 
 ### References
 
-Implementing the stratified shuffle split: https://discussions.udacity.com/t/having-trouble-with-gridsearchcv/186377/4
-Pipeline help: https://discussions.udacity.com/t/gridsearchcv-not-able-to-find-the-best-configuration/188752/4
+Implementing the stratified shuffle split: https://discussions.udacity.com/t/having-trouble-with-gridsearchcv/186377/4<br>
+Pipeline help: https://discussions.udacity.com/t/gridsearchcv-not-able-to-find-the-best-configuration/188752/4<br>
 SciKit Learn documentation used extensively: http://scikit-learn.org/
 
 I hereby confirm that this submission is my work. I have cited above the origins of any parts of the submission that were taken from Websites, books, forums, blog posts, github repositories, etc.
