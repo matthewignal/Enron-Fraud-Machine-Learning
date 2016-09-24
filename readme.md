@@ -1,8 +1,11 @@
-#### Introduction
+Matt Ignal
+Udacity Data Analysts Nanodegree P5
+
+### Introduction
 
 This project involves investigating a dataset related to the scandal which led to the bankruptcy of the Enron Corporation. Many high-ranking officials within the Houston-based energy company were indicted or convicted of fraud, insider trading, and money laundering. The data here contains a long list of financial and email features of many high-ranking Enron officials. The list contains several "persons of interest" who were the main focus in the fraud case.
 
-#### Task 1: Select what features you'll use.
+### Task 1: Select what features you'll use.
 
 146 entries makes for a small data set. This makes outliers more dangerous and overfitting harder to avoid.
 
@@ -29,7 +32,7 @@ deferred_income : NaN
 long_term_incentive : NaN
 from_poi_to_this_person : 38
 
-# of NaN's per Feature
+Number of NaN's per Feature
 poi :  0
 salary :  51
 deferral_payments :  107
@@ -55,7 +58,7 @@ The sheer number of NaN's is high, but given that we have a mixture of persons o
 
 Features List: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'bonus_salary_ratio', 'deferred_income_salary_ratio', 'from_poi_ratio', 'to_poi_ratio']
 
-#### Task 2: Remove outliers
+### Task 2: Remove outliers
 
 A cursory look at the data in the accompanying PDF reveals financial details that are all over the place. We have no reason to believe that these are not legitimate data points and it seems reasonable that they are key to determining the principal targets of investigation in the fraud case. The two non-persons, on the other hand, were removed.
 
@@ -63,7 +66,7 @@ Persons of Interest:  18
 Non-POI's:  126
 POI %: 12.5
 
-#### Task 3: Create new feature(s) 
+### Task 3: Create new feature(s) 
 
 I thought of two features to add to the list. The first is bonus to salary ratio and the second is deferred income to salary level. It makes sense that if a figure within Enron received a high bonus or had a lot of deferred income compared to their salary, then they might be receiving benefits for their role in the fraud. I also added two email features: the ratio of emails sent from a person of interest to an individual in question, and the ratio of emails sent from the individual in question to a person of interest.
 
@@ -73,7 +76,7 @@ I used SelectKBest to determine the most important features. The precision and r
 
 Selected Features: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'exercised_stock_options', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'bonus_salary_ratio']
 
-#### Task 4: Try a variety of classifiers
+### Task 4: Try a variety of classifiers
 
 Starting with a train/test split, I used Naive Bayes, Decision Tree, SVM, Adaboost, Nearest Neighbors, and Random Forest classifiers to determine the most effective ones. 
 
@@ -83,7 +86,7 @@ Precision is the ratio of true positives to the sum of true and false positives,
 
 I validated my models using the F1-score, or the harmonic mean of precision and recall, which will help evaluate which classifiers will be most effective when applied to the Enron data.
 
-#### Task 5: Tune your classifier to achieve better than 0.3 precision and recall
+### Task 5: Tune your classifier to achieve better than 0.3 precision and recall
 
 Gaussian Naive Bayes, Decision Tree, Nearest Neighbors, and Random Forest classifiers appear to be the most promising at identifying POIs. I tuned these classifiers further by using a stratified shuffle split to determine the best parameters and features in order to boost the performance of the aforementioned classifiers.
 
@@ -97,7 +100,7 @@ Best Estimator: KNeighborsClassifier(algorithm='auto', leaf_size=1, metric='mink
 Best Features: ['salary', 'bonus', 'total_stock_value', 'exercised_stock_options']
 Best F1 Score: 0.406
 
-#### Results
+### Results
 
 Tester.py returns the following using the above algorithm:
 
@@ -113,12 +116,10 @@ False positives:  321
 False negatives: 1265	
 True negatives: 10679
 
-#### References
+### References
 
 Implementing the stratified shuffle split: https://discussions.udacity.com/t/having-trouble-with-gridsearchcv/186377/4
 Pipeline help: https://discussions.udacity.com/t/gridsearchcv-not-able-to-find-the-best-configuration/188752/4
 SciKit Learn documentation used extensively: http://scikit-learn.org/
 
 I hereby confirm that this submission is my work. I have cited above the origins of any parts of the submission that were taken from Websites, books, forums, blog posts, github repositories, etc.
-
--Matt Ignal
