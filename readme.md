@@ -97,6 +97,8 @@ Best Estimator: KNeighborsClassifier(algorithm='auto', leaf_size=1, metric='mink
 Best Features: ['salary', 'bonus', 'total_stock_value', 'exercised_stock_options']
 Best F1 Score: 0.406
 
+#### Results
+
 Tester.py returns the following using the above algorithm:
 
 Accuracy: 0.87800 
@@ -111,7 +113,10 @@ False positives:  321
 False negatives: 1265	
 True negatives: 10679
 
-Help with implementing the stratified shuffle split: https://discussions.udacity.com/t/having-trouble-with-gridsearchcv/186377/4
+#### References
+
+Implementing the stratified shuffle split: https://discussions.udacity.com/t/having-trouble-with-gridsearchcv/186377/4
+Pipeline help: https://discussions.udacity.com/t/gridsearchcv-not-able-to-find-the-best-configuration/188752/4
 SciKit Learn documentation used extensively: http://scikit-learn.org/
 
 I hereby confirm that this submission is my work. I have cited above the origins of any parts of the submission that were taken from Websites, books, forums, blog posts, github repositories, etc.
