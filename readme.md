@@ -32,7 +32,7 @@ deferred_income : NaN
 long_term_incentive : NaN
 from_poi_to_this_person : 38
 
-Number of NaN's per Feature<br>
+Number of NaN's per feature:<br>
 poi :  0
 salary :  51
 deferral_payments :  107
