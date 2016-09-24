@@ -82,7 +82,7 @@ Starting with a train/test split, I used Naive Bayes, Decision Tree, SVM, Adaboo
 
 I also scaled features to a (0, 1) range, but I noticed no major effects after this was implemented.
 
-Precision is the ratio of true positives to the sum of true and false positives, so it is making sure that the classifier is not identifying too many non-POIs as POIs. Recall is the ratio of true positives to the sum of true positives and false negatives, so it makes sure that the classifier is not identifying too many POIs as non-POIs. I used F1-score, or the harmonic mean of precision and recall, to determine the most effective classifiers.
+Precision is the ratio of true positives to the sum of true and false positives, so it is making sure that the classifier is not identifying too many non-POIs as POIs. Recall is the ratio of true positives to the sum of true positives and false negatives, so it makes sure that the classifier is not identifying too many POIs as non-POIs.
 
 I validated my models using the F1-score, or the harmonic mean of precision and recall, which will help evaluate which classifiers will be most effective when applied to the Enron data.
 
