@@ -9,7 +9,7 @@ This project involves investigating a dataset related to the scandal which led t
 
 146 entries makes for a small data set. This makes outliers more dangerous and overfitting harder to avoid.
 
-A single individual's entry:
+A single individual's entry:<br>
 METTS MARK
 salary : 365788
 to_messages : 807
@@ -32,7 +32,7 @@ deferred_income : NaN
 long_term_incentive : NaN
 from_poi_to_this_person : 38
 
-Number of NaN's per Feature
+Number of NaN's per Feature<br>
 poi :  0
 salary :  51
 deferral_payments :  107
@@ -104,16 +104,16 @@ Best F1 Score: 0.406
 
 Tester.py returns the following using the above algorithm:
 
-Accuracy: 0.87800 
-Precision: 0.69602	
-Recall: 0.36750	
-F1: 0.48102	
+Accuracy: 0.87800
+Precision: 0.69602
+Recall: 0.36750
+F1: 0.48102
 F2: 0.40581
 	
-Total predictions: 13000	
-True positives:  735	
-False positives:  321	
-False negatives: 1265	
+Total predictions: 13000
+True positives:  735
+False positives:  321
+False negatives: 1265
 True negatives: 10679
 
 ### References
