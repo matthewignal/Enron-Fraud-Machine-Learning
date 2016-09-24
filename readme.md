@@ -62,9 +62,9 @@ Features List: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_ad
 
 A cursory look at the data in the accompanying PDF reveals financial details that are all over the place. We have no reason to believe that these are not legitimate data points and it seems reasonable that they are key to determining the principal targets of investigation in the fraud case. The two non-persons, on the other hand, were removed.
 
-Persons of Interest:  18
-Non-POI's:  126
-POI %: 12.5
+Persons of Interest:  18<br>
+Non-POI's:  126<br>
+POI %: 12.5<br>
 
 ### Task 3: Create new feature(s) 
 
@@ -96,8 +96,8 @@ The stratified shuffle split in the tester uses 1000 folds, but I used 200 in Gr
 
 Best Estimator: KNeighborsClassifier(algorithm='auto', leaf_size=1, metric='minkowski',
            metric_params=None, n_jobs=1, n_neighbors=5, p=2,
-           weights='distance'))])
-Best Features: ['salary', 'bonus', 'total_stock_value', 'exercised_stock_options']
+           weights='distance'))])<br>
+Best Features: ['salary', 'bonus', 'total_stock_value', 'exercised_stock_options']<br>
 Best F1 Score: 0.406
 
 ### Results
