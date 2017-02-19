@@ -121,5 +121,3 @@ True negatives: 10679
 Implementing the stratified shuffle split: https://discussions.udacity.com/t/having-trouble-with-gridsearchcv/186377/4<br>
 Pipeline help: https://discussions.udacity.com/t/gridsearchcv-not-able-to-find-the-best-configuration/188752/4<br>
 SciKit Learn documentation used extensively: http://scikit-learn.org/
-
-I hereby confirm that this submission is my work. I have cited above the origins of any parts of the submission that were taken from Websites, books, forums, blog posts, github repositories, etc.
